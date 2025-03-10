@@ -5,6 +5,7 @@ Basically `python scheduler.py` scrapes the [TTP website](https://ttp.cbp.dhs.go
 I don't have recommendations for automation yet (e.g. run daily at 8am), as that might vary based on machine operating system. Open to suggestions.
 
 The push notification contains text like
+
 ```
 Appointments Available!
 Next Available Appointment: August 13, 2025
@@ -12,6 +13,10 @@ Accessed: 2025-03-09T16:28:45
 Location: Boise Enrollment Center
 https://ttp.cbp.dhs.gov/schedulerui/schedule-interview/location?lang=en&vo=true&returnUrl=ttp-external&service=up
 ```
+
+and would show up as a push notification on your phone like
+
+![example screenshot](example_screenshot.png)
 
 ## Setup
 
