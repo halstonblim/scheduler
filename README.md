@@ -20,7 +20,7 @@ and would show up as a push notification on your phone like
 
 ## Setup
 
-0. On your machine, configure your python environment. The script requires `python<=3.10`, `selenium`, `webdriver-manager`, and `pushover`. Unfortunately, Pushover only works in `python<=3.10` due to dependence on `SafeConfigParser` (see below for conda tutorial).
+0. On your mac/Windows machine (linux support below), configure your python environment. The script requires `python<=3.10`, `selenium`, `webdriver-manager`, and `pushover`. Unfortunately, Pushover only works in `python<=3.10` due to dependence on `SafeConfigParser` (see below for conda tutorial).
 2. On your mobile device, download the Pushover app and create a Pushover account.
 3. On the Pushover website, login and create a new application to generate an API token.
 4. On your machine, clone this repository somewhere and modify the `scheduler_config.ini` file with your user id and API token.
@@ -47,3 +47,7 @@ If you have anaconda installed, you can just create a new environment
 `conda create -n scheduler python=3.10 selenium webdriver-manager -c conda-forge`
 
 Then run `conda activate scheduler` and then `conda pip install pushover`
+
+## Linux Support
+
+In `scheduler.py`, point directly to a local chromium chromedriver file `service = Service("/path/to/chromium.chromedriver")`
