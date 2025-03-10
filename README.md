@@ -4,7 +4,7 @@ Scrapes the [TTP website](https://ttp.cbp.dhs.gov/schedulerui/schedule-interview
 
 ## Setup
 
-0. On your machine, install `python<=3.10`, `selenium`, `webdriver-manager`, and `pushover`. Unfortunately, Pushover only works in `python<=3.10` due to dependence on `SafeConfigParser`
+0. On your machine, configure python environment. Install `python<=3.10`, `selenium`, `webdriver-manager`, and `pushover`. Unfortunately, Pushover only works in `python<=3.10` due to dependence on `SafeConfigParser` (see below for conda tutorial).
 1. On your mobile device, download the Pushover app on mobile device and create a Pushover account
 2. On the Pushover website, login and create a new application to generate an API token
 3. On your machine, modify `scheduler_config.ini` file with your user id and API token
@@ -23,3 +23,11 @@ app_key = <your API token>
 [location]
 location=120
 ```
+
+## Setting up environment using conda
+
+If you have anaconda installed, you can just create a new environment
+
+`conda create -n scheduler python=3.10 selenium webdriver-manager -c conda-forge`
+
+Then run `conda activate scheduler` and then `conda pip install pushover`
