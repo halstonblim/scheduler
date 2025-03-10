@@ -1,6 +1,6 @@
 # Global Entry Interivew Scheduler
 
-Scrapes the [TTP website](https://ttp.cbp.dhs.gov/schedulerui/schedule-interview/location?lang=en&vo=true&returnUrl=ttp-external&service=up) to determine if the desired location has any availability. Then sends a push notification to mobile device indicating whether there is availability or not. Uses Pushover because it has a one month free trial and only $5 for a permanent license (as of March 2025).
+Basically `python scheduler.py` scrapes the [TTP website](https://ttp.cbp.dhs.gov/schedulerui/schedule-interview/location?lang=en&vo=true&returnUrl=ttp-external&service=up) to determine if your desired interview location has any availability. Then it sends a push notification to your mobile device indicating whether there is availability or not. Uses Pushover because it has a one month free trial and only $5 for a permanent license (as of March 2025).
 
 I don't have recommendations for automation yet (e.g. run daily at 8am), which might vary based on things like operating system. Open to suggestions
 
